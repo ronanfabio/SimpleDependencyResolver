@@ -398,3 +398,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.idea/.gitignore
+.idea/encodings.xml
+.idea/indexLayout.xml
+.idea/vcs.xml
+.vscode/launch.json
+tests/SimpleDependencyResolver.Tests/lcov.info

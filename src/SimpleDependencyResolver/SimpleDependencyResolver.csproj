@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>Ronan Fabio Silva da Silva</Authors>
+        <Description>Simple dependency resolver by annotation attributes in .Net</Description>
+        <Copyright>Copyright Ronan Fabio Silva da Silva</Copyright>
+        <TargetFrameworks>netstandard2.1;net9.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <Features>strict</Features>
+        <PackageTags>dependency resolver;attribute;transient;scoped;singleton</PackageTags>
+        <SignAssembly>true</SignAssembly>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <MinVerTagPrefix>v</MinVerTagPrefix>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <Deterministic>true</Deterministic>
+        <RepositoryUrl>https://github.com/ronanfabio/SimpleDependencyResolver</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../SimpleDependencyResolver.Attributes/SimpleDependencyResolver.Attributes.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.32" Condition="'$(TargetFramework)' == 'netstandard2.1'"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" Condition="'$(TargetFramework)' == 'net5.0'"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" Condition="'$(TargetFramework)' == 'net6.0'"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" Condition="'$(TargetFramework)' == 'net7.0'"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" Condition="'$(TargetFramework)' == 'net8.0'"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" Condition="'$(TargetFramework)' == 'net9.0'"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+</Project>

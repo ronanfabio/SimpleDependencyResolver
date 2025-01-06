@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <Authors>Ronan Fabio Silva da Silva</Authors>
+    <Description>Attributes for transient, scoped or singleton registration service</Description>
+    <Copyright>Copyright Ronan Fabio Silva da Silva</Copyright>
+    <TargetFrameworks>netstandard2.1;net9.0</TargetFrameworks>
+    <Features>strict</Features>
+    <PackageTags>dependency resolver;attribute;transient;scoped;singleton</PackageTags>
+    <SignAssembly>true</SignAssembly>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <Deterministic>true</Deterministic>
+    <Version>1.0.0</Version>
+    <RootNamespace>SimpleDependencyResolver</RootNamespace>
+  </PropertyGroup>
+  
+</Project>
